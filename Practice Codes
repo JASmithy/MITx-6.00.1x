@@ -35,3 +35,17 @@ while num <= 5:
 print("Outside of loop”)
 print(num)
 #PRODUCES: 0, 1, 2, 3, 4, 5, Outside of loop, 6
+
+num = 2
+
+while num <= 10:
+    print(num)
+    num += 2
+print("Goodbye!")
+
+#print 2
+#prints 4
+#prints 6
+#prints 8
+#prints 10
+#prints Goodbye!
