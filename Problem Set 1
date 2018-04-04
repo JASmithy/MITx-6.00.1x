@@ -1,0 +1,38 @@
+#Problem 1
+#Assume s is a string of lower case characters.
+#Write a program that counts up the number of vowels contained in the string s. 
+#Valid vowels are: 'a', 'e', 'i', 'o', and 'u'. 
+
+vowels = 0 
+for char in s:
+    if char == 'a' or char == 'e' or char =='i'\
+    or char == 'o' or char == 'u':
+        vowels += 1
+ 
+print ('Number of vowels: ' + str(vowels))
+
+#Problem 2
+#Assume s is a string of lower case characters.
+#Write a program that prints the number of times the string 'bob' occurs in s. 
+
+count = 0
+for i in range(len(s)):
+    if s[i:i+3] == 'bob':
+        count +=1
+print('Number of times bob occurs is: '+str(count))
+
+#Problem 3
+#Assume s is a string of lower case characters.
+#Write a program that prints the longest substring of s in which the letters occur in alphabetical order.
+
+current = ''
+longest = ''
+for i in range(len(s)):
+    if (s[i] >= s[i-1]):
+        current += s[i]
+    else: 
+        current = s[i]
+    if len(current) > len(longest):
+            longest = current
+            
+print('Longest substring in alphabetical order is: '+ longest)
